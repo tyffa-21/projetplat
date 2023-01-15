@@ -1,0 +1,46 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="plat">
+      <h2 data-cy="platDetailsHeading"><span jhiTranslate="projetplatApp.plat.detail.title">Plat</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ plat.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="projetplatApp.plat.nom" [ngbTooltip]="'projetplatApp.plat.help.nom' | translate">Nom</span></dt>
+        <dd>
+          <span>{{ plat.nom }}</span>
+        </dd>
+        <dt><span jhiTranslate="projetplatApp.plat.prix">Prix</span></dt>
+        <dd>
+          <span>{{ plat.prix }}</span>
+        </dd>
+        <dt><span jhiTranslate="projetplatApp.plat.description">Description</span></dt>
+        <dd>
+          <span>{{ plat.description }}</span>
+        </dd>
+        <dt><span jhiTranslate="projetplatApp.plat.typePlat">Type Plat</span></dt>
+        <dd>
+          <div *ngIf="plat.typePlat">
+            <a [routerLink]="['/type-plat', plat.typePlat.id, 'view']">{{ plat.typePlat.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Retour</span>
+      </button>
+
+      <button type="button" [routerLink]="['/plat', plat.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editer</span>
+      </button>
+    </div>
+  </div>
+</div>

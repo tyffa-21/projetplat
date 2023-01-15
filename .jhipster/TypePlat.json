@@ -1,0 +1,28 @@
+{
+  "applications": "*",
+  "changelogDate": "20230112220900",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "type_plat",
+  "fields": [
+    {
+      "fieldName": "libelle",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "TypePlat",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "javadoc": "A relationship",
+      "otherEntityName": "plat",
+      "otherEntityRelationshipName": "typePlat",
+      "relationshipName": "plat",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

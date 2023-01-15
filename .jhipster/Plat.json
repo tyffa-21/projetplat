@@ -1,0 +1,38 @@
+{
+  "applications": "*",
+  "changelogDate": "20230112220901",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "plat",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "javadoc": "The firstname attribute."
+    },
+    {
+      "fieldName": "prix",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "The Employee entity.",
+  "jpaMetamodelFiltering": false,
+  "name": "Plat",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "javadoc": "Another side of the same relationship",
+      "otherEntityName": "typePlat",
+      "otherEntityRelationshipName": "plat",
+      "relationshipName": "typePlat",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

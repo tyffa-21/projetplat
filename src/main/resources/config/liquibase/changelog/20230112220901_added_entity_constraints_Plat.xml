@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Plat.
+    -->
+    <changeSet id="20230112220901-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="type_plat_id"
+                                 baseTableName="plat"
+                                 constraintName="fk_plat__type_plat_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="type_plat"/>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,25 @@
+{
+  "projetplatApp": {
+    "typePlat": {
+      "home": {
+        "title": "Type Plats",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Type Plat",
+        "createOrEditLabel": "Create or edit a Type Plat",
+        "notFound": "No Type Plats found"
+      },
+      "created": "A new Type Plat is created with identifier {{ param }}",
+      "updated": "A Type Plat is updated with identifier {{ param }}",
+      "deleted": "A Type Plat is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Type Plat {{ id }}?"
+      },
+      "detail": {
+        "title": "Type Plat"
+      },
+      "id": "ID",
+      "libelle": "Libelle",
+      "plat": "Plat"
+    }
+  }
+}

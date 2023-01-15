@@ -1,0 +1,25 @@
+{
+  "projetplatApp": {
+    "typePlat": {
+      "home": {
+        "title": "TypePlats",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Type Plat",
+        "createOrEditLabel": "Créer ou éditer un Type Plat",
+        "notFound": "Aucun Type Plat trouvé"
+      },
+      "created": "Un nouveau Type Plat a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Type Plat avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Type Plat avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Type Plat {{ id }} ?"
+      },
+      "detail": {
+        "title": "Type Plat"
+      },
+      "id": "ID",
+      "libelle": "Libelle",
+      "plat": "Plat"
+    }
+  }
+}
